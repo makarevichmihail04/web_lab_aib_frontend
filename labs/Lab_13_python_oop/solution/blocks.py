@@ -7,9 +7,9 @@ class TopPayersBlock(BaseXlsBlock):
     NAME = "Отчёт по активным клиентам"
 
     def write_header(self):
-        self.worksheet.write(self.row, self.col, self.NAME, self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
-        self.worksheet.write(self.row, self.col + 1, "ФИО", self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
-        self.worksheet.write(self.row, self.col + 2, "Общая сумма", self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
+        self.worksheet.write(self.row, self.col, self.NAME, self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
+        self.worksheet.write(self.row, self.col + 1, "ФИО", self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
+        self.worksheet.write(self.row, self.col + 2, "Общая сумма", self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
     def write_data(self):
         self.col += 1
         self.row += 1
@@ -44,9 +44,9 @@ class TopCitiesBlock(BaseXlsBlock):
     NAME = "География клиентов"
 
     def write_header(self):
-        self.worksheet.write(self.row, self.col, self.NAME, self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
-        self.worksheet.write(self.row, self.col + 1, "Город", self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
-        self.worksheet.write(self.row, self.col + 2, "Количество клиентов", self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
+        self.worksheet.write(self.row, self.col, self.NAME, self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
+        self.worksheet.write(self.row, self.col + 1, "Город", self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
+        self.worksheet.write(self.row, self.col + 2, "Количество клиентов", self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
     def write_data(self):
         self.col += 1
         self.row += 1
@@ -68,9 +68,9 @@ class TopCitiesBlock(BaseXlsBlock):
 class AccountStatusBlock(BaseXlsBlock):
     NAME = "Анализ состояния счёта"
     def write_header(self):
-        self.worksheet.write(self.row, self.col, self.NAME, self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
-        self.worksheet.write(self.row, self.col + 1, "ФИО", self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
-        self.worksheet.write(self.row, self.col + 2, "Баланс", self.workbook.add_format({'bg_color': 'pink', 'border': 1}))
+        self.worksheet.write(self.row, self.col, self.NAME, self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
+        self.worksheet.write(self.row, self.col + 1, "ФИО", self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
+        self.worksheet.write(self.row, self.col + 2, "Баланс", self.workbook.add_format({'bg_color': 'blue', 'border': 1}))
     def write_data(self):
         self.col += 1
         self.row += 1
